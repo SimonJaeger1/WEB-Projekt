@@ -1,10 +1,10 @@
-<!doctype html>
-<html lang="de">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage Hotel Alpenwind</title>
+    <title>Login</title>
     <style>
         body {
             font-family: 'Segoe UI', sans-serif;
@@ -49,6 +49,10 @@
             padding-top: 20px;
             /* Body Abstand nach oben um Überlappung mit der navbar zu verhindern */
         }
+
+        .login {
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -59,6 +63,25 @@
         <a href="signup.html">Sign Up</a> |
         <a href="login.html">Login</a>
     </nav>
+
+    <h1>Login</h1>
+
+    <form>
+        <div class="login">
+            <div>
+                <label for="username">Benutzername:</label>
+                <input type="text" id="username" name="username" placeholder="Benutzername" required>
+            </div>
+            <div>
+                <label for="password">Passwort:</label>
+                <input type="password" id="password" name="password" minlength="8" placeholder="Passwort" required>
+            </div>
+            <div>
+                <label for="login"></label>
+                <input type="submit" value="Login">
+            </div>
+        </div>
+    </form>
 </body>
 
 </html>

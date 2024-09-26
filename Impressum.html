@@ -29,11 +29,34 @@
             color: #D87C4A;
 
         }
+
+        .main-navbar {
+            position: fixed;
+            /*Fixiert die Navigationsleiste */
+            margin-top: 10px;
+            width: 100%;
+            background-color: white;
+            top: 0;
+            text-align: center;
+            /*Immer über dem Inhalt*/
+        }
+
+        body {
+            padding-top: 20px;
+            /* Body Abstand nach oben um Überlappung mit der navbar zu verhindern */
+        }
     </style>
 </head>
 
 <body>
-    <h1>IMPRESSUM</h1>
+    <nav class="main-navbar">
+        <a href="Impressum.html">Impressum</a> |
+        <a href="FAQ.html">FAQ</a> |
+        <a href="signup.html">Sign Up</a> |
+        <a href="login.html">Login</a>
+    </nav>
+
+    <h1>Impressum</h1>
     <p><strong>Alpenwind Hotel</strong>
         <br><strong>Alpendorf 2
             <br>5600 St. Johann im Pongau

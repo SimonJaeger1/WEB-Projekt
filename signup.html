@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrierung</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            color: #333;
+            margin: 20px;
+            line-height: 1.5;
+        }
+
+        h1 {
+            font-family: 'semplicitapro', sans-serif;
+            color: #D87C4A;
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 36px;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        a {
+            color: #D87C4A;
+
+        }
+
+        .main-navbar {
+            position: fixed;
+            /*Fixiert die Navigationsleiste */
+            margin-top: 10px;
+            width: 100%;
+            background-color: white;
+            top: 0;
+            text-align: center;
+            /*Immer über dem Inhalt*/
+        }
+
+        body {
+            padding-top: 20px;
+            /* Body Abstand nach oben um Überlappung mit der navbar zu verhindern */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Registrierung</h1>
+
+    <nav class="main-navbar">
+        <a href="Impressum.html">Impressum</a> |
+        <a href="FAQ.html">FAQ</a> |
+        <a href="signup.html">Sign Up</a> |
+        <a href="login.html">Login</a>
+    </nav>
+
+    <form action="login.html" method="get"> <!-- action="Seite, die nach dem Absenden geöffnet wird"-->
+        <div>Anrede:
+            <input type="radio" id="herr" name="anrede" value="Herr">
+            <label for="herr">Herr</label>
+            <input type="radio" id="frau" name="anrede" value="Frau">
+            <label for="frau">Frau</label>
+        </div>
+        <div>
+            <label for="vname">Vorname:</label>
+            <input type="text" id="vname" name="vname" placeholder="Max" required>
+        </div>
+        <div>
+            <label for="nname">Nachname:</label>
+            <input type="text" id="nname" name="nname" placeholder="Mustermann" required>
+        </div>
+        <div>
+            <label for="email">E-Mail:</label>
+            <input type="email" id="email" name="email" placeholder="mustermann@email.com" required>
+        </div>
+        <div>
+            <label for="username">Benutzername:</label>
+            <input type="text" id="username" name="username" placeholder="Benutzername" required>
+        </div>
+        <div>
+            <label for="password">Passwort:</label>
+            <input type="password" id="password" name="password" minlength="8" required>
+        </div>
+        <div>
+            <label for="password">Passwort:</label>
+            <input type="password" id="password" name="password" minlength="8" required>
+        </div>
+        <div>
+            <br><input type="reset" value="Zurücksetzen">
+            <input type="submit" value="Senden">
+        </div>
+    </form>
+
+</body>
+
+</html>
